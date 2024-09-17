@@ -1,0 +1,10 @@
+.cont {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 250px;
+    background-color: black;
+  }
+  
