@@ -1,6 +1,6 @@
-import React from "react";
 import classes from "./index.module.css";
 
+// eslint-disable-next-line react/prop-types
 const Card = ({title, description, person, dateStarted, dateFinished }) => {
   return (
     <div className={classes.container}>

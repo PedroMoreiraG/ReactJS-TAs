@@ -1,7 +1,14 @@
-import Card from "./Components/Card";
-import CardChildren from "./Components/Children/CardChildren";
-import CardContent from "./Components/Children/CardContent";
+import Card from "./Components/TA1Card";
+import CardChildren from "./Components/TA2Children/CardChildren";
+import CardContent from "./Components/TA2Children/CardContent";
 import "./App.css";
+import InputComponent from './Components/TA3Input';
+import Counter from './Components/TA4Counter';
+import ToggleText from './Components/TA5TextBoton';
+import TaskListWithEdit from './Components/TA7DeleteTask';  // Tareas con edición y eliminación
+import CounterWithTitle from './Components/TA9useEffectTitle';  // Contador con título dinámico
+import FetchUsers from './Components/TA10API';  // Llamada a API
+import Timer from './Components/TA11Temporizador';  // Temporizador
 
 export default function App() {
   return (
@@ -37,6 +44,29 @@ export default function App() {
       <CardChildren>
         <CardContent title="Jugador 3 Children" description="Ganador del Balon de Oro" person="Vinicius Junior" dateStarted="03/2023" dateFinished="09/2024"/>
       </CardChildren>
-    </div>  
+    
+    <h1>React Tareas</h1>
+
+    <h2>Tarea 3: Input</h2>
+    <InputComponent />
+
+    <h2>Tarea 4: Contador</h2>
+    <Counter />
+
+    <h2>Tarea 5: Toggle Text</h2>
+    <ToggleText />
+
+    <h2>Tareas 6-8: Lista de Tareas con edición y eliminación</h2>
+    <TaskListWithEdit />
+
+    <h2>Tarea 9: Contador con título dinámico</h2>
+    <CounterWithTitle />
+
+    <h2>Tarea 10: Fetch Usuarios</h2>
+    <FetchUsers />
+
+    <h2>Tarea 11: Temporizador</h2>
+    <Timer />
+</div>  
   );
 }
